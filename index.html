@@ -11,7 +11,7 @@
     div#header{
         background-color: #FFA500;
         text-align:center;
-        background:url("/images/backg.jpg") no-repeat center ;
+        background:url("W/images/backg.jpg") no-repeat center ;
         height: 150px;
     }
     h1{
@@ -129,7 +129,7 @@
     }
     article#art1 div#pic img{
         width: 90%;
-        height: 80;
+        margin:0 10%;
 	}
     article#art1 p#a{
       position:absolute;
@@ -226,7 +226,7 @@
     }
 </style>
 
-<script src="words.js"></script>
+<script src="W/words.js"></script>
 <script>
 var words =
 {};
@@ -248,7 +248,7 @@ words.中文.push(arr[2]);
      window.onload = function(){
         var imgDom = document.querySelector("img");
         var ran = parseInt(Math.random() * 4);
-        imgDom.src = "/images/"+ran+".JPG";
+        imgDom.src = "W/images/"+ran+".JPG";
         var art = document.querySelector("article#art2");
         var showW = document.querySelector("div#showWord")
         var pnDom = document.querySelector("p#pn");
